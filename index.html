@@ -6,225 +6,352 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-    nav{
-    background:#0f172a;
-    padding:12px 0;
-    position:sticky;
-    top:0;
-    z-index:1000;
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f6f7fb;
+color:#222;
+line-height:1.6;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+/* NAVBAR */
+
+nav{
+background:#0f172a;
+padding:12px 0;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:600;
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:600;
 }
 
 nav a:hover{
-    text-decoration:underline;
+text-decoration:underline;
 }
 
-body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f6f7fb;
-    color:#222;
-    line-height:1.6;
-}
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:20px;
-}
+/* HEADER */
+
 header{
-    background:#0f172a;
-    color:white;
-    padding:60px 20px;
+background:#0f172a;
+color:white;
+padding:60px 20px;
+text-align:center;
 }
-header h1{margin:0;font-size:40px;}
-header p{font-size:18px;margin-top:8px;color:#cbd5f5;}
+
+header img{
+width:130px;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+header p{
+font-size:18px;
+margin-top:8px;
+color:#cbd5f5;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:40px;
+background:#eef2ff;
+border-radius:8px;
+}
+
+/* SECTIONS */
 
 section{
-    background:white;
-    margin:25px 0;
-    padding:25px;
-    border-radius:8px;
+background:white;
+margin:25px 0;
+padding:25px;
+border-radius:8px;
 }
 
 h2{
-    color:#0f172a;
-    border-bottom:2px solid #e5e7eb;
-    padding-bottom:6px;
+color:#0f172a;
+border-bottom:2px solid #e5e7eb;
+padding-bottom:6px;
 }
 
-ul{padding-left:20px;}
+/* GRID */
 
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:15px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
 }
+
+/* SKILL BADGES */
 
 .badge{
-    background:#e0e7ff;
-    color:#1e3a8a;
-    padding:8px 12px;
-    border-radius:6px;
-    display:inline-block;
-    margin:5px 5px 0 0;
-    font-size:14px;
+background:#e0e7ff;
+color:#1e3a8a;
+padding:8px 12px;
+border-radius:6px;
+display:inline-block;
+margin:5px 5px 0 0;
+font-size:14px;
 }
 
-footer{
-    text-align:center;
-    padding:20px;
-    color:#666;
+/* PROJECT CARDS */
+
+.project-card{
+background:#f1f5f9;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
 }
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+color:#666;
+}
+
 </style>
 </head>
 
 <body>
+
+<!-- NAVBAR -->
+
 <nav>
-    <div class="container">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
+<div class="container">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
 </nav>
 
+<!-- HEADER -->
+
 <header>
-    <div class="container">
-        <h1>Antony Dino</h1>
-        <p>QA/QC Engineer – GRC Facade | Draftsman | Quantity Surveyor</p>
-        <p>Dubai, UAE | +971 559623783 | antonydino144@gmail.com</p>
-    </div>
+
+<!-- Upload photo to repo and replace filename -->
+
+<img src="profile.jpg" alt="Antony Dino">
+
+<h1>Antony Dino</h1>
+<p>QA/QC Engineer – GRC Facade | Draftsman | Quantity Surveyor</p>
+<p>Dubai, UAE | +971 559623783 | antonydino144@gmail.com</p>
+
 </header>
 
 <div class="container">
 
-<section>
+<!-- HERO -->
+
+<section class="hero">
+
+<h2>Hello, I'm Antony Dino</h2>
+
+<p>
+QA/QC Engineer specializing in GRC facade inspection, drafting, and
+construction project coordination with experience in UAE and India.
+</p>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
 <h2>About Me</h2>
+
 <p>
 QA/QC Engineer with hands-on experience in GRC facade installation and quality
 control processes. Currently working in UAE with strong background in civil
 drafting and quantity surveying. Experienced in drawing review, material
-inspection, site coordination and documentation. Looking to contribute to
-high-quality facade and construction projects.
+inspection, site coordination and documentation.
 </p>
+
 </section>
 
-<section>
+<!-- SKILLS -->
+
+<section id="skills">
+
 <h2>Key Skills</h2>
 
 <div class="grid">
+
 <div>
+
 <h4>Technical</h4>
+
 <span class="badge">GRC Facade QA/QC</span>
 <span class="badge">Material Inspection</span>
 <span class="badge">Shop Drawing Review</span>
-<span class="badge">NCR & Documentation</span>
+<span class="badge">NCR Documentation</span>
 <span class="badge">BOQ & Estimation</span>
+
 </div>
 
 <div>
+
 <h4>Software</h4>
+
 <span class="badge">AutoCAD</span>
 <span class="badge">Revit Architecture</span>
 <span class="badge">Tekla Structures</span>
 <span class="badge">MS Office</span>
+
 </div>
+
 </div>
 
 </section>
 
-<section>
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
 <h2>Professional Experience</h2>
 
 <h3>QA/QC Engineer – GRC Division (Aug 2024 – Present)</h3>
+
 <p><strong>EXTRA CO Industries LLC – Ras Al Khaimah, UAE</strong></p>
+
 <ul>
+
 <li>Developed and implemented quality control procedures for GRC facade installation.</li>
+
 <li>Reviewed design drawings, shop drawings and material submittals.</li>
+
 <li>Inspected delivered materials and verified certifications.</li>
+
 <li>Ensured compliance with project specifications and local codes.</li>
+
 <li>Monitored alignment and installation of GRC panels.</li>
-<li>Prepared inspection reports, NCRs and final handover documentation.</li>
+
+<li>Prepared inspection reports, NCRs and final documentation.</li>
+
 </ul>
 
 <h3>Draftsman cum Quantity Surveyor (Oct 2021 – Jun 2024)</h3>
+
 <p><strong>VRR Engineering Consultancy – Chennai, India</strong></p>
+
 <ul>
+
 <li>Prepared 2D & 3D drawings for building and bridge projects.</li>
+
 <li>Coordinated with engineers and architects for design finalisation.</li>
+
 <li>Performed site visits and updated drawings with field measurements.</li>
+
 <li>Prepared BOQs, cost estimates and tender documents.</li>
+
 <li>Supported contract administration activities.</li>
+
 </ul>
 
 </section>
+
+<!-- PROJECTS -->
 
 <section id="projects">
+
 <h2>Projects</h2>
 
-<h4>GRC Facade Installation Projects – UAE</h4>
+<div class="grid">
+
+<div class="project-card">
+
+<h4>GRC Facade Installation – UAE</h4>
+
 <ul>
-    <li>Building of H.H. Sheikha & Maryam Bint Hamdan Bin Mohammad Alnehayan</li>
-    <li>Palace Residence North – Creek Harbour</li>
-    <li>Creek Waters 2 – Creek Harbour</li>
+
+<li>H.H. Sheikha & Maryam Bint Hamdan Bin Mohammad Alnehayan Building</li>
+
+<li>Palace Residence North – Creek Harbour</li>
+
+<li>Creek Waters 2 – Creek Harbour</li>
+
 </ul>
 
-<h4>Building & Bridge Design Projects – Chennai, India</h4>
+</div>
+
+<div class="project-card">
+
+<h4>Bridge & Building Design – India</h4>
+
 <ul>
-    <li>Completed over 40 bridge projects and 15 building design & estimation works for Government projects in Tamil Nadu.</li>
+
+<li>40+ Bridge design projects</li>
+
+<li>15 Building design & estimation projects for Tamil Nadu Government</li>
+
 </ul>
+
+</div>
+
+</div>
 
 </section>
 
-</p>
-</section>
+<!-- EDUCATION -->
 
 <section>
+
 <h2>Education</h2>
+
 <p>
+
 <strong>B.E. Civil Engineering</strong><br>
 DMI College of Engineering, Chennai (2017 – 2021)<br>
 CGPA – 7.11
+
 </p>
+
 </section>
 
-<section>
-<h2>Professional Training</h2>
-<p>
-Professional Course in AutoCAD, Revit Architecture and Tekla Structures – CADDESK<br>
-May 2021 – September 2021
-</p>
-</section>
+<!-- CONTACT -->
 
-<section>
-<h2>Languages</h2>
-<p>English | Tamil | Malayalam | Hindi</p>
-</section>
+<section id="contact">
 
-<section>
 <h2>Contact</h2>
+
 <p>
+
 📞 +971 559623783<br>
 📧 antonydino144@gmail.com<br>
 📍 Dubai, UAE
+
 </p>
+
 </section>
 
 </div>
 
 <footer>
+
 © 2026 – Antony Dino | QA/QC Engineer Portfolio
+
 </footer>
 
 </body>
 </html>
-
-
-
